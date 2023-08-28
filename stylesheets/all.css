@@ -1,0 +1,374 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  line-height: 1.5;
+  font-family: "Bruno Ace SC", cursive, sans-serif, serif;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+  font-family: "Bruno Ace SC", cursive, sans-serif, serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 2.5rem;
+  border-bottom: 1px solid transparent;
+}
+.navbar .navItem {
+  color: #D1D1D1;
+}
+.navbar .navItem a {
+  color: #D1D1D1;
+}
+.navbar .navItem a:hover {
+  border-bottom: 1px solid #fff;
+}
+
+.banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1.5rem;
+  padding-top: 4.5rem;
+  padding-bottom: 4.5rem;
+}
+.banner .bannerText {
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.banner .bannerTextAside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.banner .bannerTextAside h3 {
+  font-size: 8rem;
+  color: #00FFA3;
+}
+
+footer {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  text-align: center;
+}
+footer p {
+  color: #fff;
+}
+
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 12px;
+}
+
+.bg-black {
+  background-color: #000;
+}
+
+.bg-cover {
+  background-size: cover;
+}
+
+.btn {
+  border: none;
+  border-radius: 1.5rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+.btn img {
+  padding-left: 0.25rem;
+}
+.btn:hover {
+  background-color: #D1D1D1;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.btnWhite {
+  background-color: #fff;
+  color: #000;
+}
+
+.btnBlack {
+  background-color: #000;
+  color: #fff;
+  width: 185px;
+}
+
+.intro, .about, .projects {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
+.intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 1.5rem;
+}
+.intro h2 {
+  color: #fff;
+  margin-bottom: 2.25rem;
+}
+.intro p {
+  font-size: 1.5rem;
+  color: #fff;
+  max-width: 526px;
+  margin-bottom: 2.25rem;
+}
+.intro .introImages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.about .aboutList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 636px;
+  gap: 1.5rem;
+}
+.about .aboutList .aboutItem {
+  width: 48%;
+  padding: 1.25rem;
+  color: #15161D;
+  border: 1px solid #D1D1D1;
+  -webkit-box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.08);
+          box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.08);
+}
+.about .aboutList .aboutItem:hover {
+  -webkit-box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.4);
+          box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.4);
+}
+.about .aboutList .aboutItem h5 {
+  font-size: 1.25rem;
+}
+.about .aboutText {
+  max-width: 526px;
+}
+.about .aboutText h2 {
+  margin-bottom: 2.25rem;
+}
+.about .aboutText p {
+  font-size: 1.5rem;
+}
+
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+.contact .contactText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.75rem;
+}
+.contact .contactText h2 {
+  color: #fff;
+}
+
+.contactList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1.25rem;
+}
+.contactList .contactItem:hover img {
+  border-radius: 2.5rem;
+  -webkit-box-shadow: 0px 0px 16px 3px rgba(144, 148, 255, 0.9), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 0px 16px 3px rgba(144, 148, 255, 0.9), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.projects h2 {
+  max-width: 746px;
+  margin-left: auto;
+  margin-bottom: 1rem;
+}
+
+.projectSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.5rem;
+}
+.projectSection aside {
+  max-width: 32%;
+}
+.projectSection article {
+  max-width: 66%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.projectSection article .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 1.5rem;
+}
+.projectSection article .card .cardImage {
+  max-width: 23%;
+}
+.projectSection article .card .cardText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.projectSection article .card .cardText button {
+  max-width: 185px;
+}
+.projectSection article section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.5rem;
+}/*# sourceMappingURL=all.css.map */
